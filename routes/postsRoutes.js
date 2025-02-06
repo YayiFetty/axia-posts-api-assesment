@@ -5,22 +5,22 @@ const {createPost, getAllPosts, getPost, updatePost, deletePost} = require("../c
 
 // Create a new post
 
-router.post("/posts", createPost);  
+router.post("/", createPost);  
 
 // Get all posts
 
-router.get("/posts", getAllPosts);
+router.get("/", getAllPosts);
 
 // Get a single post by ID
 
-router.get("/posts/:id", getPost);
+router.get("/:id", getPost);
 
 // Update a post by ID
 
-router.put("/posts/:id", updatePost);
+router.put("/:id", updatePost);
 
 // Delete a post by ID
 
-router.delete("/posts/:id", deletePost);
+router.delete("/:id", deletePost);
 
 module.exports = router;

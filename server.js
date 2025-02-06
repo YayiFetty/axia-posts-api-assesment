@@ -7,7 +7,7 @@ const routerPost = require('./routes/postsRoutes');
 app.use(express.json());
 
 
-app.use('/api', routerPost);
+app.use('/api/posts', routerPost);
 
 const Port = 5001;
 
